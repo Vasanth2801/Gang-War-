@@ -1,5 +1,12 @@
 fileFormatVersion: 2
 guid: 4ab51816d11f94c99bdd56449e2171f8
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211512
+  packageName: Streets of Fight
+  packageVersion: 1.0
+  assetPath: Assets/Warped Packs/Streets Of Fight/Environment/tileset.png
+  uploadId: 905798
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -109,6 +116,19 @@ TextureImporter:
   - serializedVersion: 4
     buildTarget: Android
     maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -12032,10 +12052,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 211512
-  packageName: Streets of Fight
-  packageVersion: 1.0
-  assetPath: Assets/Warped Packs/Streets Of Fight/Environment/tileset.png
-  uploadId: 905798

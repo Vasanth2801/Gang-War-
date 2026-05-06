@@ -1,5 +1,12 @@
 fileFormatVersion: 2
 guid: cbf71e55d3a33d14a9bebd1088f1d7e5
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211512
+  packageName: Streets of Fight
+  packageVersion: 1.0
+  assetPath: Assets/Warped Packs/Streets Of Fight/Assets/Environments/Docks Stage/Layers/back.png
+  uploadId: 905798
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -109,6 +116,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -154,10 +174,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 211512
-  packageName: Streets of Fight
-  packageVersion: 1.0
-  assetPath: Assets/Warped Packs/Streets Of Fight/Assets/Environments/Docks Stage/Layers/back.png
-  uploadId: 905798

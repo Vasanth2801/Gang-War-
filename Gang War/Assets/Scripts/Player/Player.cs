@@ -72,7 +72,11 @@ public class Player : MonoBehaviour
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, attackLayerMask);
             foreach(Collider2D hit in hitEnemies)
             {
-                Debug.Log("Attacking the Enemy");
+                EnemyHealth eh = hit.GetComponent<EnemyHealth>();
+                if(eh != null)
+                {
+                    eh.TakeDamage(10);
+                }
             }
         }
     }
@@ -85,7 +89,11 @@ public class Player : MonoBehaviour
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, attackLayerMask);
             foreach (Collider2D hit in hitEnemies)
             {
-                Debug.Log("Kicking the Enemy");
+                EnemyHealth eh = hit.GetComponent<EnemyHealth>();
+                if (eh != null)
+                {
+                    eh.TakeDamage(12);
+                }
             }
         }
     }
@@ -98,7 +106,11 @@ public class Player : MonoBehaviour
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, attackLayerMask);
             foreach (Collider2D hit in hitEnemies)
             {
-                Debug.Log("Double Kicking the Enemy");
+                EnemyHealth eh = hit.GetComponent<EnemyHealth>();
+                if (eh != null)
+                {
+                    eh.TakeDamage(15);
+                }
             }
         }
     }
@@ -111,7 +123,11 @@ public class Player : MonoBehaviour
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, attackLayerMask);
             foreach (Collider2D hit in hitEnemies)
             {
-                Debug.Log("Smashing the Enemy");
+                EnemyHealth eh = hit.GetComponent<EnemyHealth>();
+                if (eh != null)
+                {
+                    eh.TakeDamage(20);
+                }
             }
         }
     }

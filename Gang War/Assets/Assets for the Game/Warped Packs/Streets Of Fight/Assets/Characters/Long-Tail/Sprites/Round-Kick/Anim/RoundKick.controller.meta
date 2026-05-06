@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 04a125fd3669f0641adafe0a58c880ab
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211512
+  packageName: Streets of Fight
+  packageVersion: 1.0
+  assetPath: Assets/Warped Packs/Streets Of Fight/Assets/Characters/Long-Tail/Sprites/Round-Kick/Anim/RoundKick.controller
+  uploadId: 905798

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3ad9531b8cf1e9841a61a882c5d49e9c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211512
+  packageName: Streets of Fight
+  packageVersion: 1.0
+  assetPath: Assets/Warped Packs/Streets Of Fight/Assets/Characters/Big Tako/Sprites/Double-kick/Anim/DoubleKick.controller
+  uploadId: 905798

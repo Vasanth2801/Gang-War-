@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6a72751ab1046f14d8c5c08d5f47b5df
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211512
+  packageName: Streets of Fight
+  packageVersion: 1.0
+  assetPath: Assets/Warped Packs/Streets Of Fight/Assets/Characters/BigGuy/Sprites/Idle/Anim/Idle.controller
+  uploadId: 905798

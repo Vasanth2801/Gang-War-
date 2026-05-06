@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fa69a8343bc8fad4093d66047767e06f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211512
+  packageName: Streets of Fight
+  packageVersion: 1.0
+  assetPath: Assets/Warped Packs/Streets Of Fight/Assets/Characters/PunkGirl/Sprites/Run/Anim/Run.controller
+  uploadId: 905798

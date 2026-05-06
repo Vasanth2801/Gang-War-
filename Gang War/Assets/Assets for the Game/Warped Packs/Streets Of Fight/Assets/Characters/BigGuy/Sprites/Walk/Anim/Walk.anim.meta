@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c12abdc73c610924a8d66fa15b0ffa2d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211512
+  packageName: Streets of Fight
+  packageVersion: 1.0
+  assetPath: Assets/Warped Packs/Streets Of Fight/Assets/Characters/BigGuy/Sprites/Walk/Anim/Walk.anim
+  uploadId: 905798

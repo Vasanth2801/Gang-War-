@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 45458274fb212eb41936378864b3e5f2
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211512
+  packageName: Streets of Fight
+  packageVersion: 1.0
+  assetPath: Assets/Warped Packs/Streets Of Fight/Assets/Characters/Big Tako/Sprites/walk/Walk.controller
+  uploadId: 905798

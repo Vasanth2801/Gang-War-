@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fccc88a53789a284587a54735f756a91
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 211512
+  packageName: Streets of Fight
+  packageVersion: 1.0
+  assetPath: Assets/Warped Packs/Streets Of Fight/Assets/Characters/Big Tako/Sprites/Run/Anim/Run.controller
+  uploadId: 905798

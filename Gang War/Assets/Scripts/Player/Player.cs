@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -13,6 +14,11 @@ public class Player : MonoBehaviour
     [SerializeField] private float groundRadius = 0.2f;
     [SerializeField] private LayerMask groundLayerMask;
     [SerializeField] private bool isGrounded = false;
+
+    [Header("Attack Settings")]
+    [SerializeField] private Transform attackPoint;
+    [SerializeField] private float attackRadius = 0.5f;
+    [SerializeField] private LayerMask attackLayerMask;
 
     [Header("References")]
     [SerializeField] private Rigidbody2D rb;
@@ -37,6 +43,10 @@ public class Player : MonoBehaviour
     {
         Move();
         Jump();
+        PunchAttack();
+        KickAttack();
+        DoubleKickAttack();
+        SmashAttack();
     }
 
     void Move()
@@ -51,6 +61,58 @@ public class Player : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        }
+    }
+
+    void PunchAttack()
+    {
+        if(Input.GetKeyDown(KeyCode.K))
+        {
+            animator.SetTrigger("Punch");
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, attackLayerMask);
+            foreach(Collider2D hit in hitEnemies)
+            {
+                Debug.Log("Attacking the Enemy");
+            }
+        }
+    }
+
+    void KickAttack()
+    {
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            animator.SetTrigger("Kick");
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, attackLayerMask);
+            foreach (Collider2D hit in hitEnemies)
+            {
+                Debug.Log("Kicking the Enemy");
+            }
+        }
+    }
+
+    void DoubleKickAttack()
+    {
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            animator.SetTrigger("DoubleKick");
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, attackLayerMask);
+            foreach (Collider2D hit in hitEnemies)
+            {
+                Debug.Log("Double Kicking the Enemy");
+            }
+        }
+    }
+
+    void SmashAttack()
+    {
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            animator.SetTrigger("Smash");
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, attackLayerMask);
+            foreach (Collider2D hit in hitEnemies)
+            {
+                Debug.Log("Smashing the Enemy");
+            }
         }
     }
 

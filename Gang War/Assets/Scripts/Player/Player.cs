@@ -5,9 +5,18 @@ public class Player : MonoBehaviour
 {
     [Header("Movement Settings")]
     [SerializeField] private float speed = 5f;
+    [SerializeField] private float jumpForce = 13f;
+    [SerializeField] private int facingDirection = 1;
+
+    [Header("Ground Check Settings")]
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private float groundRadius = 0.2f;
+    [SerializeField] private LayerMask groundLayerMask;
+    [SerializeField] private bool isGrounded = false;
 
     [Header("References")]
     [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Animator animator;
 
     [Header("Input Settings")]
     [SerializeField] private float moveInput;
@@ -15,15 +24,44 @@ public class Player : MonoBehaviour
     private void Update()
     {
         moveInput = Input.GetAxis("Horizontal");
+
+        if(moveInput > 0 && transform.localScale.x < 0 || moveInput < 0 && transform.localScale.x  > 0)
+        {
+            Flip();
+        }
+
+        HandleAnimations();
     }
 
     private void FixedUpdate()
     {
         Move();
+        Jump();
     }
 
     void Move()
     {
         rb.linearVelocity = new Vector2(moveInput * speed, rb.linearVelocity.y);
+    }
+
+    void Jump()
+    {
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius,groundLayerMask);
+
+        if(Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        }
+    }
+
+    void Flip()
+    {
+        facingDirection *= -1;
+        transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+    }
+
+    void HandleAnimations()
+    {
+        animator.SetFloat("Speed",Mathf.Abs(moveInput));
     }
 }
